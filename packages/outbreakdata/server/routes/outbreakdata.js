@@ -5,7 +5,7 @@ var outbreakdata = require('../controllers/outbreakdata');
 // The Package is passed automatically as first parameter
 module.exports = function(Outbreakdata, app, auth, database) {
 
-  app.route('/outbreakdata/getall').get(outbreakdata.all);
+  app.route('/outbreakdata').get(outbreakdata.all);
 
   /*app.route('/articles')
     .get(articles.all)
